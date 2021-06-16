@@ -1,0 +1,3 @@
+thumbnail image 600px wide
+
+background 1400 to 2000px wide

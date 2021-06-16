@@ -1,0 +1,259 @@
+
+
+/* External Styles 
+------------------------------------*/
+ 
+
+/* GLobal Styles 
+------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;       
+}
+img {
+    width: 300px;
+}
+
+h1 {
+    font-size: 85px;
+    line-height: 1;
+}
+h2 {
+    font-size: 45px;
+    
+}
+h1, h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+
+}
+
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+.item-details h3 + p {
+    font-style: italic;
+}
+.item-details h3 ~ p {
+    margin: 0;
+}
+
+.divider section {  
+    border-bottom: 1px dashed #343434;
+    padding: 20px 0;
+}
+
+.divider section:last-of-type {
+    border-bottom: none;    
+}
+
+/* Navigation 
+------------------------------------*/
+.navi {
+    width: 100%;
+    position: fixed;
+    background-color: darkorange;
+}
+.navi .navi-content {
+    max-width: 100%;
+    width: 85%;
+    margin: 0 auto;
+    padding: 5px 0;   
+}
+
+.navi ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto; 
+    padding: 0;
+}
+.navi ul li {
+    display: inline-block;  
+}
+.navi ul li a { 
+    color: #F7FFF7 ;
+    font-size: 30px;
+    padding: 0 20px; 
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;  
+}
+/* #navi {
+    background-color: #E1630D;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    box-shadow: 0 0 5px 3px black;
+    box-shadow: inset hoff voff blur color;
+    ul {
+      text-align: center;
+      list-style-type: none;
+      li {
+        display: inline-block;
+        a{
+          padding: 10px 20px 10px;
+          text-decoration: none;
+          color: black;
+          font-size: 1.5em;
+          font-family: helvetica;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+  } */
+
+
+/* Profile 
+------------------------------------*/
+
+.top {
+    background: #b5b1ad;
+    color: #343434;
+}
+
+.resume a {
+    color: #343434;
+}
+
+
+
+/* Projects 
+------------------------------------*/
+
+.projects {
+    background: #3D3B38;
+    color: #F7FFF7;
+}
+.projects a{
+    color: #F7FFF7;
+}
+.projects .btn {
+    color: #2F3061;
+    background-color: #F7FFF7;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.projects .btn:hover {
+    background: rgba(247, 255, 247, 80%)
+}
+
+.project-item {
+    overflow: hidden;
+
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+
+/* Work Experience
+------------------------------------*/
+
+.work-experience {
+    background: #A1C6D7;
+}
+
+  
+
+/* Education 
+------------------------------------*/
+.education {
+    background-image: url(../images/kelli-tungay-unsplash.jpg);
+    background-size: cover;
+    background-position:  right;
+    padding-bottom: 100px;
+}
+
+.education p    {
+    width: 60%;
+}
+
+
+/* Contact Me 
+------------------------------------*/
+
+footer {
+    background: #343434;
+    color: #F7FFF7;  
+}
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+.contact-list a {
+    color: #F7FFF7 ;
+    font-size: 20px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.contact-list a .icons {
+    padding-right: 50px;
+}
+
+
+/* .contact-list a {
+    padding: 50px;
+    display: inline-block;
+} */
+
+/* Responsive
+------------------------------------*/  
+
+@media screen and (min-width:750px) {
+    
+    .top, footer{
+        text-align: center;
+    }
+    .project-item img {
+        float : left;
+        margin-right: 20px ;
+    }
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:749px) {
+    h1 {
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 10px;
+    }
+    h2{
+        line-height: 1;
+    }
+    .contact-list a {
+        padding: 5px;
+    }
+}
