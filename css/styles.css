@@ -9,6 +9,7 @@
 html {
     box-sizing: border-box;
 }
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -37,9 +38,7 @@ h1, h2 {
     font-family: 'Caveat', cursive;
     font-weight: 400;
     margin: 0;
-
 }
-
 .content-wrap {
     max-width: 800px;
     width: 85%;
@@ -69,72 +68,101 @@ h3 {
 
 /* Navigation 
 ------------------------------------*/
-.navi {
+/* nav {
     width: 100%;
     position: fixed;
-    background-color: darkorange;
-}
-.navi .navi-content {
-    max-width: 100%;
-    width: 85%;
-    margin: 0 auto;
+    background-color: #343434;
+    text-align: center;
+    margin: auto;
     padding: 5px 0;   
 }
 
-.navi ul {
+
+nav ul {
     list-style-type: none;
-    text-align: center;
     margin: 0 auto; 
-    padding: 0;
+    padding: 0; 
+    
 }
-.navi ul li {
+nav ul li {
     display: inline-block;  
 }
-.navi ul li a { 
+nav ul li a { 
     color: #F7FFF7 ;
     font-size: 30px;
     padding: 0 20px; 
     text-decoration: none;
     transition: all 0.15s ease-in-out;  
-}
-/* #navi {
-    background-color: #E1630D;
+} */
+
+nav {
+    background: #565264;
+    color: #f5f5f5;
     position: fixed;
     width: 100%;
-    height: 50px;
-    line-height: 50px;
-    box-shadow: 0 0 5px 3px black;
-    box-shadow: inset hoff voff blur color;
-    ul {
-      text-align: center;
-      list-style-type: none;
-      li {
-        display: inline-block;
-        a{
-          padding: 10px 20px 10px;
-          text-decoration: none;
-          color: black;
-          font-size: 1.5em;
-          font-family: helvetica;
-          &:hover {
-            color: white;
-          }
-        }
-      }
-    }
-  } */
+    /* padding-left: 1.4rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* Menu is not visible on desktop view */
+.menu-icon {
+    display: none;
+    padding-right: 10px;
+  }
+  
+  /* We use flexbox to style the navList  */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    padding-right: 10px;
+  }
+  
+nav li {
+    list-style: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  /* li:hover,
+  li:active {
+    transform: scale(1.1) rotate3d(1, 1, 1, -10deg);
+  }
+   */
+nav a {
+    padding: 0.4rem;
+    text-decoration: none;
+    color: #f5f5f5;
+    transition: all 0.5s ease-in-out; 
+  }
+nav a:hover {
+    transition: none;   
+    border-bottom: 2px solid white;
+}
+
+
+nav .logo { 
+    padding-left: 20px ;
+}
 
 
 /* Profile 
 ------------------------------------*/
 
 .top {
-    background: #b5b1ad;
-    color: #343434;
+    /* background: #b5b1ad; */
+    background: #7a767e;
+    color: #EDEAE8  ;
+}
+
+.top h2 {
+    font-size: 50px;
+    padding-top: 10px;
 }
 
 .resume a {
-    color: #343434;
+    color: #f5f5f5;
 }
 
 
@@ -143,20 +171,30 @@ h3 {
 ------------------------------------*/
 
 .projects {
-    background: #3D3B38;
-    color: #F7FFF7;
+    /* background: #3D3B38; */
+    background: #a6808c;
+    color: #ede9e9;
 }
 .projects a{
+    text-decoration: none;
     color: #F7FFF7;
 }
-.projects .btn {
+.projects a:hover, a:active {
+    transition: none;
+    border-bottom: 2px solid white;
+}
+
+.projects p {
+    color: #F7FFF7
+}
+/* .projects .btn {
     color: #2F3061;
     background-color: #F7FFF7;
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
     display: inline-block;
-}
+} */
 .projects .btn:hover {
     background: rgba(247, 255, 247, 80%)
 }
@@ -182,9 +220,11 @@ h3 {
 /* Education 
 ------------------------------------*/
 .education {
-    background-image: url(../images/kelli-tungay-unsplash.jpg);
+    /* background-image: url(../images/kelli-tungay-unsplash.jpg);
     background-size: cover;
-    background-position:  right;
+    background-position:  right; */
+    background: #ccb7ae;
+    color: #43404f;
     padding-bottom: 100px;
 }
 
@@ -197,23 +237,36 @@ h3 {
 ------------------------------------*/
 
 footer {
-    background: #343434;
-    color: #F7FFF7;  
+    /* background: #343434; */
+    background: #d6cfcb;
+    color: #43404f;  
 }
 .contact-list {
     list-style-type: none;
     padding: 0;
 }
 .contact-list a {
-    color: #F7FFF7 ;
+    color: #43404f ;
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+
     font-size: 20px;
+    font-weight: 450 ;
     padding: 20px;
     display: inline-block;
+    text-decoration: none;
 }
 
 .contact-list a .icons {
     padding-right: 50px;
 }
+
 
 
 /* .contact-list a {
@@ -245,6 +298,7 @@ footer {
 }
 
 @media screen and (max-width:749px) {
+    
     h1 {
         font-size: 75px;
         line-height: 0.9;
@@ -252,8 +306,45 @@ footer {
     }
     h2{
         line-height: 1;
+        padding: 5px 0;
+    }
+    /*  We set the flex direction to column on small screens  */
+    nav {
+        flex-direction: column;
+      }
+    /*  the logo div is styles for small screens using flexbox  */
+    nav .logo {
+        width: 100%;    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /*  The menu icon is now displayed  */
+    nav .menu-icon {
+        display: block;
+        font-size: 1.6rem;
+    }
+
+    /*  By default the navList isnt visible althought its styled  */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        padding-top: 1rem;
+        width: 100%;
+    }
+    /*  If we have open class on ul(navList) then we display it (we'll use JS for toggling the classList)  */
+    nav ul.open {
+        display: flex;  
+        transition: all 5s ease-in-out; 
+    }
+    
+    /*  list items style on small screens  */
+    nav li {
+        padding: 0.6rem;
+        text-align: center;
     }
     .contact-list a {
         padding: 5px;
-    }
+    }   
 }
