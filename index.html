@@ -2,39 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewp ort" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maulik Soni, Personal Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/97f2aedd83.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script/navi.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
     
   </head>
   <body>
     <main>
       <!-- ***********************  Navigation  *********************** -->
-      <section class="navi">
-        <div class="navi-content">
+      <!-- <section class="navi"> -->
+        <!-- <div class="navi-content"> -->
           <nav>
-            <ul>
-              <li><a data-scroll href="#page-1">PAGE 1</a></li>
-              <li><a data-scroll href="#page-2">PAGE 2</a></li>
-              <li><a data-scroll href="#page-3">PAGE 3</a></li>
-              <li><a data-scroll href="#page-4">PAGE 4</a></li>
+            <!--  Nav will have two parts -> 1) for Logo(with logo we'll have menu icon for mobile as well but it'll be hidden on desktop) 2) Nav list  -->
+        
+            <!--  Logo and menu div item  -->
+            <div class="logo">
+              <h2>Maulik Soni</h2>
+              <!--   This will only be visible on small devices   -->
+              <div class="menu-icon">
+                  <!--    Used this icon from Font awesome whose script is at last    -->
+                  <i class="fas fa-bars"></i>
+              </div>
+            </div>
+              <!--  This is second item of the nav which we use to display navList  -->
+              <!-- <ul>
+              <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Blogs</a></li>
+              </ul> -->
+            <ul class="topmenu" >
+              
+              <li ><a data-scroll class="nav-links" href="#page-1">About</a></li>
+              <li ><a data-scroll class="nav-links" href="#page-2">Projects</a></li>
+              <li ><a data-scroll class="nav-links" href="#page-3">Education</a></li>
+              <li ><a data-scroll class="nav-links" href="#page-4">Contact</a></li>
             </ul>
           </nav>
-        </div>
-      </section>
+         <!-- </div> -->
+      <!-- </section> -->
 
       <!-- ***********************  ABOUT / PROFILE  *********************** -->
-      <section id="page-1" class="top">
+      <section id="page-1" c  lass="top">
         <div class="content-wrap resume">
-          <h1>Maulik Soni</h1>
-          <h2>Machine Learning enthusiast</h2>
-
-          <p>I like to solve challenges using Artificial Intelligence and Machine Learning. Furthermore, I also build and deploy end to end solution using different AI tools for real-world problems.</p>
+          <h2>About</h2>
+          
+          <p>Hi! My name is Maulik Soni. I am from India. I am very passionate about Artificial Intelligence and Machine Learning. I did my master in specilasation with Machine Learning. Furthermore, I also passionate to build and deploy end to end solution of real-world problems using different AI tools.</p>
           <p>Checkout my resume from <a href="https://mauliksoni-97.github.io/portfolio/pdf/Maulik_Resume.pdf" target="_blank"><strong>here</strong></a></p>
         </div>
       </section>
@@ -48,29 +65,29 @@
           <!-- Project 1 -->
           <section class="project-item">
             <img src="images/alina-grubnyak-unsplash.jpg" alt="description of image">
-            <h3>VARIATIONAL GRAPH AUTO ENCODER(VGAE)</h3>
+            <h3><a href="https://github.com/MaulikSoni-97/VGAE" target="_blank">VARIATIONAL GRAPH AUTO ENCODER(VGAE)</a></h3>
             <p>This model useful to find new links between new nodes generated in the graph & previously present in it.I
               trained & tested this network on the CORA data set(A data set which contains Research papers categorized in one of the seven different categories. .e.g. genetic algorithms, Reinforcement Learning, etc). This model can also be useful for the recommendation task on social media platforms.</p>
-            <a class="btn" href="https://github.com/MaulikSoni-97/VGAE" target="_blank">Link</a>
+            <!-- <a class="btn" href="https://github.com/MaulikSoni-97/VGAE" target="_blank">Link</a> -->
             <!-- <a class="btn" href="https://www.lynda.com/Christina-Truong/7842227-1.html">Lynda.com</a> -->
           </section>
 
           <!-- Project 2 -->
           <section class="project-item">
             <img src="images/fusion-medical-animation-unsplash.jpg" alt="description of image">
-            <h3>EPIDEMIC INTELLIGENCE MODEL</h3>
+            <h3><a href="https://github.com/MaulikSoni-97/Epidemic_Intelligence" target="_blank">EPIDEMIC INTELLIGENCE MODEL</a></h3>
             <p>This is multi-label classification model which is able to extract multiple disease symptoms presents in
               Social media text(e.g Twitter). It is first stage of two stage epidemic intelligence model which is useful for
               the prediction of the epidemic before it occurs.</p>
-            <a class="btn" href="https://github.com/MaulikSoni-97/Epidemic_Intelligence" target="_blank">Link</a>
+            <!-- <a class="btn" href="https://github.com/MaulikSoni-97/Epidemic_Intelligence" target="_blank">Link</a> -->
           </section>
 
           <!-- Project 3 -->
           <section class="project-item">           
             <img src="images/nana-dua-unsplash.jpg" alt="description of image">
-            <h3>PARALLEL IMPLEMENTATION OF K MEANS CLUSTERING</h3>
+            <h3><a href="https://github.com/MaulikSoni-97/K-means-clustering" target="_blank">PARALLEL IMPLEMENTATION OF K MEANS CLUSTERING</a></h3>
             <p>This is a parallel implementation of unsupervised machine learning technique for the clustering of the data in which a maximum speedup of 128(GPU time/CPU time) & maximum throughput around 0.3 Tera Flops per Second is being measured. This project is implemented through the CUDA C programming language.</p>
-            <a class="btn" href="https://github.com/MaulikSoni-97/K-means-clustering" target="_blank">Link</a>
+            <!-- <a class="btn" href="https://github.com/MaulikSoni-97/K-means-clustering" target="_blank">Link</a> -->
           </section>
         </div>
       </section>
@@ -168,14 +185,14 @@
 
           <!-- Social media and contact links. Add or remove any networks. -->
           <ul class="contact-list">
-             <li><a href="mailto:mauliksoni1997@gmail.com" ><i class="fas fa-envelope">  E-mail</i></a></li>
-            <li><a href="https://github.com/MaulikSoni-97" target="_blank"><i class="fab fa-github">  GitHub</i></a></li>
-            <li><a href="www.linkedin.com/in/maulik-soni-799573160" target="_blank"><i class="fab fa-linkedin-in">  LinkedIn</i></a></li> 
-            <li><a href="https://twitter.com/mauliksoni97" target="_blank"><i class="fab fa-twitter">  Twitter</i></a></li>
-            
-          </ul> 
+             <li><a href="mailto:mauliksoni1997@gmail.com" ><i class="fas fa-envelope"></i> E-mail</a></li>
+            <li><a href="https://github.com/MaulikSoni-97" target="_blank"><i class="fab fa-github"></i>  GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/maulik-soni-799573160" target="_blank"><i class="fab fa-linkedin-in"></i>  LinkedIn</a></li> 
+            <li><a href="https://twitter.com/mauliksoni97" target="_blank"><i class="fab fa-twitter"></i>  Twitter</a></li>
+          </ul>   
         </div>
       </footer>
     </main>
   </body>
+  <script src="script/navi.js"></script>
 </html>
